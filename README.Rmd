@@ -22,91 +22,25 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-ggkeyboard lets you plot a keyboard and change the colours on it. This package is very experimental, so expect breaking changes as I work through making all the customization options as friendly as possible.
+---
 
-You can install ggkeyboard from github:
+This is a fork [@sharlagelfand](https://github.com/sharlagelfand)'s fantabulous [ggkeyboard](https://github.com/sharlagelfand/ggkeyboard) package, butchered to make the following keyboard for my talk titled "In the beginning was R Markdown" (title, though not content, inspired by the essay "In the beginning was the command line" by Neal Stephenson). It makes the following keyboard and otherwise doesn't promise to do anything else as I may have butchered Sharla's code while getting this to work. If you want the real thing go to the original [ggkeyboard](https://github.com/sharlagelfand/ggkeyboard) repo.
+
+```{r in-the-beginning}
+library(ggkeyboard)
+
+ggkeyboard(
+  in_the_beginning_full, 
+  palette = keyboard_palette("in_the_beginning"), 
+  adjust_text_colour = FALSE
+)
+```
+
+If, for some reason, you want this package, you can install from GitHub with the following:
 
 ``` r 
 # install.packages("devtools")
-devtools::install_github("sharlagelfand/ggkeyboard", ref = "main")
+devtools::install_github("mine-cetinkaya-rundel/ggkeyboard")
 ```
 
-# Usage
-
-Plot a keyboard using `ggkeyboard()`. The default is very cute:
-
-```{r pastel}
-library(ggkeyboard)
-
-ggkeyboard()
-```
-
-## Colour palettes
-
-You can change the colours, font, sizes, etc. There are a few built in colour palettes, available via `keyboard_palette()`:
-
-```{r palette}
-library(scales)
-
-show_col(keyboard_palette("serika"))
-```
-
-This keyboard is inspired by the [Drop + Zambumon MT3 Serika Custom Keycap Set](https://drop.com/buy/drop-zambumon-mt3-serika-custom-keycap-set):
-
-```{r serika}
-ggkeyboard(palette = keyboard_palette("serika"))
-```
-
-This one is inspired by the [Melgeek MG Wahtsy ABS Doubleshot Keycap Set](https://drop.com/buy/melgeek-mg-wahtsy-abs-doubleshot-keycap-set):
-
-```{r wahtsy}
-ggkeyboard(palette = keyboard_palette("wahtsy"))
-```
-
-and this one by the [Domikey ABS Doubleshot SA Cyberpunk Pumper Keycap Set](https://drop.com/buy/domikey-abs-doubleshot-sa-cyberpunk-pumper-keycap-set):
-
-```{r cyberpunk}
-ggkeyboard(palette = keyboard_palette("cyberpunk"))
-```
-
-## Layouts
-
-`ggkeyboard()` defaults to using a tenkeyless keyboard, available in `tkl`:
-
-```{r tkl}
-head(tkl)
-```
-
-There is also a full keyboard layout available via `full`. This palette is based off the [Varmilo VA108 Fullsize Keyboard](https://drop.com/buy/varmilo-108-keyboard)
-
-```{r full}
-ggkeyboard(full, palette = keyboard_palette("varmilo"), font_size = 2.75)
-```
-
-a 60% layout available via `sixty_percent` (colour palette based off the [Drop + T0mb3ry SA Yuri Custom Keycap Set](https://drop.com/buy/drop-t0mb3ry-sa-yuri-custom-keycap-set)):
-
-```{r sixty}
-ggkeyboard(sixty_percent, palette = keyboard_palette("t0mb3ry"), adjust_text_colour = FALSE)
-```
-
-and a mac layout, based off the Apple magic keyboard:
-
-```{r mac}
-ggkeyboard(mac, palette = keyboard_palette("magic"))
-```
-
-You can use an ISO layout by changing `layout` to "iso", for any of the given keyboards:
-
-```{r iso}
-ggkeyboard(tkl, layout = "iso")
-```
-
-## Highlighting
-
-You can use `highlight_keys()` to emphasize any keys - for example, to highlight what keys make up the shortcut for the pipe (%>%):
-
-```{r highlight}
-ggkeyboard(tkl) %>%
-  highlight_keys(c("Alt Left", "Shift Left", "M"))
-```
-
+But you probably want [this](https://github.com/sharlagelfand/ggkeyboard) instead.
