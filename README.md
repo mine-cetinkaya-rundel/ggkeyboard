@@ -11,7 +11,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 ------------------------------------------------------------------------
 
-This is a fork \[@sharlagelfand\](<https://github.com/sharlagelfand>)’s
+This is a fork of [sharlagelfand](https://github.com/sharlagelfand)’s
 fantabulous [ggkeyboard](https://github.com/sharlagelfand/ggkeyboard)
 package, butchered to make the following keyboard for my talk titled “In
 the beginning was R Markdown” (title, though not content, inspired by
