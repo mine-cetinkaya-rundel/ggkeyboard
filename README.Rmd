@@ -18,12 +18,6 @@ knitr::opts_chunk$set(
 
 # ggkeyboard
 
-<!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-<!-- badges: end -->
-
----
-
 This is a fork of [sharlagelfand](https://github.com/sharlagelfand)'s fantabulous [ggkeyboard](https://github.com/sharlagelfand/ggkeyboard) package, butchered to make the following keyboard for my talk titled "In the beginning was R Markdown" (title, though not content, inspired by the essay "In the beginning was the command line" by Neal Stephenson). It makes the following keyboard and otherwise doesn't promise to do anything else as I may have butchered Sharla's code while getting this to work. If you want the real thing go to the original [ggkeyboard](https://github.com/sharlagelfand/ggkeyboard) repo.
 
 ```{r in-the-beginning}

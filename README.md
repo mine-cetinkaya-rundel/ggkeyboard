@@ -3,14 +3,6 @@
 
 # ggkeyboard
 
-<!-- badges: start -->
-
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-<!-- badges: end -->
-
-------------------------------------------------------------------------
-
 This is a fork of [sharlagelfand](https://github.com/sharlagelfand)’s
 fantabulous [ggkeyboard](https://github.com/sharlagelfand/ggkeyboard)
 package, butchered to make the following keyboard for my talk titled “In
