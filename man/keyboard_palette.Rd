@@ -5,7 +5,8 @@
 \title{Keyboard palettes}
 \usage{
 keyboard_palette(
-  palette = c("pastel", "serika", "wahtsy", "cyberpunk", "magic", "varmilo", "t0mb3ry")
+  palette = c("pastel", "serika", "wahtsy", "cyberpunk", "magic", "varmilo", "t0mb3ry",
+    "in_the_beginning")
 )
 }
 \arguments{

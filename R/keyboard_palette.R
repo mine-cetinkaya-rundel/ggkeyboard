@@ -31,7 +31,7 @@
 #'
 #' ggkeyboard(palette = keyboard_palette("cyberpunk"))
 #' }
-keyboard_palette <- function(palette = c("pastel", "serika", "wahtsy", "cyberpunk", "magic", "varmilo", "t0mb3ry")) {
+keyboard_palette <- function(palette = c("pastel", "serika", "wahtsy", "cyberpunk", "magic", "varmilo", "t0mb3ry", "in_the_beginning")) {
 
   palette <- match.arg(palette)
 
@@ -112,6 +112,18 @@ keyboard_palette <- function(palette = c("pastel", "serika", "wahtsy", "cyberpun
       arrow = "#29384E",
       light = "#ff4619",
       text = "#ff5b33"
+    ),
+    in_the_beginning = c(
+      background = "white",
+      keyboard = "#423F40",
+      alphanumeric = "#7D7972", # nickel
+      inn = "#97efe9",       # opal
+      the = "#72829C",     # celeste
+      beginning = "#e6276b",
+      was = "#996E90",
+      rmarkdown = "#A8C21F",
+      space = "#FFE43C",
+      text = "black"
     )
   )
 }

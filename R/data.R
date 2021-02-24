@@ -1,3 +1,13 @@
+#' In The Beginning Keyboard
+#'
+#' A dataset containing rows and keys in that spell out "IN THE BEGINNING WAS R MARKDOWN"
+"in_the_beginning"
+
+#' In The Beginning Keyboard
+#'
+#' A dataset containing rows and keys in a full mechanical keyboard that spell out "IN THE BEGINNING WAS R MARKDOWN"
+"in_the_beginning_full"
+
 #' Tenkeyless Keyboard
 #'
 #' A dataset containing rows and keys in a tenkeyless keyboard.
